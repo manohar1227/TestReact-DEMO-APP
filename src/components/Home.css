@@ -1,0 +1,23 @@
+.form-container{
+    background-color: lightblue;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    
+}
+
+button[type="submit"]{
+    margin-top: 10px;
+}
+
+.form-container label{
+    display: block;
+    margin-bottom: 10px;
+
+}
+.form-container{    
+    margin-bottom: 15px;
+}

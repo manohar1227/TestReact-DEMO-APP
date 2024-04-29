@@ -1,0 +1,260 @@
+  .App {
+  text-align: center;
+  display: flex; 
+  height: 100vh; 
+  z-index: 1;
+
+ }   
+ .left-section{
+  flex:1;
+  padding: 20px;
+  background-color:rgb(122, 41, 41);
+  top: 60px;
+  margin-top: 80px;
+  align-items: center;
+  /* height: 100%; */
+
+ 
+}
+.right-section{
+  flex: 1;
+  padding: 20px;
+   background-color:rgb(199, 197, 197);
+  top: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 65px;
+  text-align: center;
+  /* height: 100%; */
+ 
+  
+}    
+
+/* .split {
+
+  height: 100%;
+
+  width: 50%;
+
+  position: fixed;
+
+  z-index: 1;
+
+  top: 0;
+
+  overflow-x: hidden;
+
+  padding-top: 20px;
+
+}
+
+
+
+Control the left side
+
+.left {
+
+  left: 0;
+
+  background-color:#4d9ceb;;
+
+}
+
+
+
+Control the right side
+
+.right {
+
+  right: 0;
+
+  background-color:#f3a1a5;
+
+} */
+
+
+
+
+.custom-table th,
+.custom-table td{
+  border: 1px solid black;
+  padding: 8px;
+
+}
+.custom-table{
+  border-collapse: collapse;
+  border-spacing: 10px;
+  /* margin: 100px auto ; */
+
+  
+}
+
+
+
+
+.box{
+  /* border:2px solid red; */
+   width: 400px; 
+   /* margin-top: 0;*/
+   /* margin-left: 30px;
+   margin-top: 40px; */
+    
+ 
+}
+
+.tabs{
+  display: flex;
+  justify-content: space-between;
+  width: -50px;
+}
+
+.tab{
+  /* background:#17cf97; */
+  background: cadetblue;
+  flex:1;
+  padding: -50px;
+  text-align: center;
+  /* border:1px solid royalblue; */
+  border:1px solid black;
+  border-top: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  
+}
+
+.active-tab{
+  border: none;
+  background:#17cf97;
+
+}
+
+.active-tab::after{
+  border-top: 2px  solid red;
+  content: '';
+  position: absolute;
+  top:0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: initial;
+  animation: new 0.5s;
+
+} 
+
+@keyframes new{
+  from {
+    top: 50px;
+    left:0;
+    right:0;
+    background: gray;
+
+
+  } 
+}
+.contents{
+    position: relative;
+  
+
+  width: 690px; 
+  /* margin-top: 70 */
+
+  
+}
+
+.content{
+   display: none; 
+  position: center; 
+  
+}
+
+.active-content{
+  display: block;
+  transition: all 1s ease-in-out;
+  margin-top: 30px; 
+   /* overflow-y: auto; */
+  /* max-height: 500px;   */
+}
+
+.add-btn{
+  float: left;
+  font-size: 15px;
+  
+  
+}
+.save-btn{
+  float: left;
+  font-size: 13px;
+  margin-left: 6px;
+}
+
+.excel-btn{
+  float: left;
+  font-size: 13px;
+  margin-left: 6px;
+}
+.Json-btn{
+  float: left;
+  font-size: 13px;
+  margin-left: 6px;
+}
+.Pagination{
+  float: right;
+  font-size: 15px;
+   margin-right: 5px;
+   margin-left: 5px; 
+   padding: 10px;
+
+}
+.previous-btn{
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+
+   
+}
+.page-info{
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.Next-btn{
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.page-select-btn{
+  margin-right: 10px;
+}
+
+.input-textBox{
+  text-align: left;
+ position: relative;
+ bottom: -30px;
+
+}
+
+
+.text-box{
+  width:90px;
+  margin-left: 2px; 
+}
+
+
+.form-submit-btn{
+  width:60px;
+  margin-left: 2px;
+}
+.data-table{
+  
+ position: relative;
+ top: -50px;
+}
+
+.dataTable2{
+  position: relative;
+  top: -20px;
+}
+.input2-textBox{
+  text-align: left;
+  position: relative;
+  bottom: 5px;
+}
