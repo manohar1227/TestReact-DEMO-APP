@@ -40,6 +40,14 @@ app.get("/AssetMaster", async (req, res) => {
   }
 });
 
+app.get("/api/test", async (req, res) => {
+  try {
+    res.send("server in connected");
+  } catch (error) {
+    console.log("error while connecting to server");
+  }
+});
+
 app.post("/AssetMaster", async (req, res) => {
   try {
     const { PG, MODEL, DESCRIPTION, Country_Code } = req.body;

@@ -10,6 +10,7 @@ import Contact from "./components/Contact";
 import TopNavbar from "./components/TopNavbar";
 import RctTable from "./components/RctTable";
 import Tab from "./components/Tab";
+import Test from "./components/Test";
 
 // import Table1 from "./components/Table1";
 
@@ -22,6 +23,7 @@ function App() {
       <BrowserRouter>
         <TopNavbar />
 
+        <Test />
         <div className="left-section">
           {/* <div className="split left"> */}
           <Navbar />
