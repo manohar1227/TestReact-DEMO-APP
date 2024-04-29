@@ -8,8 +8,7 @@ app.use(express.json());
 
 mongoose
   .connect(
-    // "mongodb://myTester:Mong0U2s3e4@ec2-15-206-163-180.ap-south-1.compute.amazonaws.com:27017/test",
-    "mongodb://myTester:Mong0U2s3e4@ec2-43-204-148-149.ap-south-1.compute.amazonaws.com/test",
+    "mongodb://myTester:Mong0U2s3e4.ap-south-1.compute.amazonaws.com/test",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
