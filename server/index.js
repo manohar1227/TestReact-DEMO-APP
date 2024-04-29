@@ -100,7 +100,7 @@ app.delete("/deleteAsset/:_id", async (req, res) => {
     res.status(500).json({ error: "server error" });
   }
 });
-
+console.log("server running");
 app.listen(3010, () => {
   console.log("server running");
 });
