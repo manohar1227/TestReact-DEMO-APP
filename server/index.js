@@ -42,7 +42,7 @@ app.get("/AssetMaster", async (req, res) => {
 
 app.get("/api/test", async (req, res) => {
   try {
-    res.send("server in connected");
+    res.send("server in connecteds");
   } catch (error) {
     console.log("error while connecting to server");
   }
