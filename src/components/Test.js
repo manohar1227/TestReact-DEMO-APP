@@ -19,12 +19,6 @@ const Test = () => {
 
     testServerConnection();
   }, []);
-
-  return (
-    <div>
-      <div>{responseMessage}</div>
-    </div>
-  );
 };
 
 export default Test;
