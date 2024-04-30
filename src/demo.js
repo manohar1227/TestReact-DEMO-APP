@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import DataTable from "react-data-table-component";
 import axios from "axios";
 import usePagination from "./usePagination";
-import { ExportAssetsToExcel } from "./ExportToExcel";
+// import { ExportAssetsToExcel } from "./ExportToExcel";
 import { ExportAssetsToJson } from "./ExportToJson";
 function RctTable() {
   const [data, setData] = useState([]);
@@ -320,7 +320,7 @@ function RctTable() {
         highlightOnHover
         onSelectedRowsChange={handleRowSelected}
       />
-      <ExportAssetsToExcel data={data} selectedRows={selectedRows} />
+      {/* <ExportAssetsToExcel data={data} selectedRows={selectedRows} /> */}
       <ExportAssetsToJson data={data} selectedRows={selectedRows} />
 
       {/* pagination and css for table */}

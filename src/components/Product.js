@@ -3,7 +3,7 @@ import DataTable from "react-data-table-component";
 import axios from "axios";
 import { useEffect } from "react";
 import usePagination from "./usePagination";
-import { ExportToExcel } from "./ExportToExcel";
+// import { ExportToExcel } from "./ExportToExcel";
 import { ExportToJson } from "./ExportToJson";
 
 function Product() {
@@ -409,7 +409,7 @@ state variables `records`, `filterRecords`, and `uniqueCities` with the fetched 
         onSelectedRowsChange={handleRowSelected}
       ></DataTable>
       <div>
-        <ExportToExcel records={records} selectedRows={selectedRows} />
+        {/* <ExportToExcel records={records} selectedRows={selectedRows} /> */}
         <ExportToJson records={records} />
       </div>
       {/* <button className="excel-btn" onClick={() => ExportToExcel(records)}>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import DataTable from "react-data-table-component";
 import axios from "axios";
 import usePagination from "./usePagination";
-import { ExportAssetsToExcel } from "./ExportToExcel";
+// import { ExportAssetsToExcel } from "./ExportToExcel";
 import { ExportAssetsToJson } from "./ExportToJson";
 function RctTable() {
   const [data, setData] = useState([]);
@@ -234,7 +234,6 @@ function RctTable() {
     } catch (error) {
       console.error("Error deleting asset:", error);
     }
-   
   };
 
   const handleCellChange = (e, row, field) => {
@@ -250,14 +249,13 @@ function RctTable() {
     setEditingData(updatedEditedData);
   };
 
- 
- /**
-  * The `handleCellBlur` function updates specific fields of a row in the `data` array based on the
-  * values in the `editingData` object for that row and then clears the editing state for that row.
-  * @param rowId - The `rowId` parameter in the `handleCellBlur` function represents the unique
-  * identifier of the row that is being edited in a table or grid. It is used to identify the specific
-  * row in the dataset that is currently being edited.
-  */
+  /**
+   * The `handleCellBlur` function updates specific fields of a row in the `data` array based on the
+   * values in the `editingData` object for that row and then clears the editing state for that row.
+   * @param rowId - The `rowId` parameter in the `handleCellBlur` function represents the unique
+   * identifier of the row that is being edited in a table or grid. It is used to identify the specific
+   * row in the dataset that is currently being edited.
+   */
   const handleCellBlur = (rowId) => {
     if (editingData[rowId]) {
       const updatedData = [...data];
@@ -344,7 +342,7 @@ function RctTable() {
             type="text"
             name="DESCRIPTION"
             placeholder="DESCRIPTION"
-           /* The above code snippet is a part of a React component written in JavaScript. It is
+            /* The above code snippet is a part of a React component written in JavaScript. It is
            setting the value of an input field to the value of `newRowData.DESCRIPTION` and updating
            the `newRowData` state when the input field value changes. The `onChange` event handler
            is triggered when the input field value changes, and it updates the `DESCRIPTION`
@@ -399,7 +397,7 @@ function RctTable() {
         highlightOnHover
         onSelectedRowsChange={handleRowSelected}
       />
-      <ExportAssetsToExcel data={data} selectedRows={selectedRows} />
+      {/* <ExportAssetsToExcel data={data} selectedRows={selectedRows} /> */}
       <ExportAssetsToJson data={data} selectedRows={selectedRows} />
 
       {/* pagination and css for table */}
@@ -1211,9 +1209,6 @@ export default RctTable;
 // );
 // };
 // export default BOQ;
-
-
-
 
 // const fetchData = async () => {
 //   try {
