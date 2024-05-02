@@ -6,14 +6,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get("/api/test", async (req, res) => {
-  try {
-    res.send("server  connected ");
-  } catch (error) {
-    console.log("error while connecting to server");
-  }
-});
-
 mongoose
   .connect(
     "mongodb://myTester:Mong0U2s3e4.ap-south-1.compute.amazonaws.com/test",
@@ -45,6 +37,14 @@ app.get("/AssetMaster", async (req, res) => {
     res.send({ data: AssetData });
   } catch (error) {
     console.log("error while fetching data");
+  }
+});
+
+app.get("/api/test", async (req, res) => {
+  try {
+    res.send("server  connected ");
+  } catch (error) {
+    console.log("error while connecting to server");
   }
 });
 
